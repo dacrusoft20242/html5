@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+    <form action="procesar.jsp" method="post">
+
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Digite su nombre..." required />
+        <br>
+        <br>
+        <label for="passwrod">Password: </label>
+        <input type="password" name="password" id="password" />
+        <br>
+        <br>
+        <label for="genero">Genero:</label><br />
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" id="femenino" value="F" />
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="M" />
+        <br /><br />
+
+        <label for="deporte">Deportes:</label>
+        <label for="futbol">Futbol</label>
+        <input type="checkbox" name="deporte" id="futbol" value="1">
+        <label for="baloncesto">baloncesto</label>
+        <input type="checkbox" name="deporte" id="baloncesto" value="2">
+        <label for="natacion">natacion</label>
+        <input type="checkbox" name="deporte" id="natacion" value="3">
+
+        <br><br>
+
+        <label for="programa">Seleccione el programa académico</label>
+        <select name="programa" id="programa">
+            <option value="1">Ing. de Software</option>
+            <option value="2">Ing. de Petroleos</option>
+            <option value="3">Ing. Civil</option>
+        </select>
+
+        <br><br>
+
+        <label for="observaciones">Observaciones:</label><br>
+        <textarea name="observaciones" id="observaciones" cols="80" rows="5"></textarea>
+
+        <br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto" accept=".jpg,.png">
+
+        <br><br>
+
+        <label for="cantidad">Cantidad (entre 1 y 10)</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="10" />
+
+        <br><br>
+        <label for="estrato"> Estrato (1-6)</label>
+        <input type="range" name="estrato" id="estrato" min="1" max="6" />
+
+        <br><br>
+
+        <label for="color">Seleccione Color</label>
+        <input type="color" name="color" id="color">
+
+        <br><br>
+
+        <label for="fecha">Fecha Nacimiento:</label>
+        <input type="date" name="fecha" id="fecha" />
+
+        <br><br>
+
+        <input type="button" value="Validar">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+
+    </form>
+
+</body>
+
+</html>
